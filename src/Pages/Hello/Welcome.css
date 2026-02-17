@@ -188,7 +188,7 @@
         white-space: nowrap;
         font-size: clamp(16px, 5vw, 25px);
         font-weight: bolder;
-        background: #a35f5f;
+        /* background: #a35f5f; */
         flex-wrap: wrap;
         /* width: 90vw; */
     }
