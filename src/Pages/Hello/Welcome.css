@@ -69,6 +69,17 @@
     padding: 0 clamp(10px, 2vw, 15px);
 }
 
+.experience-text {
+    font-size: clamp(18px, 4vw, 30px);
+    font-family: "Fugaz One", serif;
+    color: #D03434;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 .container-welcome h3 {
     font-size: clamp(16px, 3vw, 25px);
     font-family: "Crimson Text", serif;
@@ -99,8 +110,11 @@
 }
 
 .num-content {
-    font-size: clamp(18px, 3.5vw, 55px);
+    font-size: clamp(24px, 3.8vw, 55px);
     font-weight: 500;
+    padding: 10px;
+    /* background: red; */
+
 }
 
 .image-urgence {
@@ -134,15 +148,20 @@
 /* Sticky CTA for screens <= 1000px */
 @media (max-width: 1000px) {
     .cta-welcome {
+        font-size: 25px;
+
         position: fixed;
         bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
         width: 75%;
+        max-width: 400px;
         z-index: 1000;
         transition: opacity 0.3s ease, visibility 0.3s ease;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     }
+
+
 
     .cta-welcome.sticky-hidden {
         opacity: 0;
@@ -188,8 +207,9 @@
         white-space: nowrap;
         font-size: clamp(16px, 5vw, 25px);
         font-weight: bolder;
+
         /* background: #a35f5f; */
-        flex-wrap: wrap;
+
         /* width: 90vw; */
     }
 }
