@@ -4,31 +4,47 @@
     justify-content: space-between;
     align-items: center;
     background: white;
-    /* background: #e96c6c; */
-    height: 400px;
-    width: 300px ;
+    height: clamp(380px, 60vw, 400px);
+    width: clamp(95%, 50vw, 300px);
+    max-width: 350px;
     border-radius: 5px;
     border: solid 2px #11145244;
     box-shadow: 1px 2px 4px #10599462;
-    padding-inline: 10px;
-    padding-block: 15px ;
-    font-family: "Roboto" ,serif;
+    padding-inline: clamp(10px, 2vw, 15px);
+    padding-block: 15px;
+    font-family: "Roboto", serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 8px 16px #10599462;
 }
 
 .top-cart {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.top-cart h1 {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin: 0;
 }
 
 .top-cart img {
-    width: 100px;
-    height: 100px;
+    width: clamp(60px, 12vw, 85px);
+    height: clamp(60px, 12vw, 85px);
+    object-fit: contain;
 }
 
 .cart-container p {
-    width: 90%;
+    width: clamp(90%, 92vw, 95%);
     text-align: center;
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+    line-height: 1.4;
 }
-
 
 .image-block {
     width: 100%;
@@ -40,12 +56,20 @@
 }
 
 .cart-button {
-    font-size: medium;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
     background: rgba(238, 76, 76, 0.151);
-    width: 200px;
-    height: 40px;
-    /* margin: 5px; */
+    width: clamp(90%, 35vw, 220px);
+    max-width: 220px;
+    height: clamp(40px, 7vw, 45px);
     margin-top: 15px;
     border: solid #ED1B24 2px;
     border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #ED1B24;
+}
+
+.cart-button:hover {
+    background: rgba(238, 76, 76, 0.3);
+    transform: scale(1.05);
 }

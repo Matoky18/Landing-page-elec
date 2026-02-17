@@ -7,7 +7,7 @@
 }
 
 .container-FastService h1 {
-    
+
     color: aliceblue;
 }
 
@@ -21,21 +21,21 @@
     background-image: url("../../assets/fast.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center ;
+    background-position: center;
 }
 
 .cta-fast {
     font-weight: bolder;
-    font-size: larger;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     border: 2px solid black;
     color: #ee1621;
     background: #000000c4;
-    margin-bottom: 50px;
+    margin-bottom: clamp(30px, 5vw, 50px);
     backdrop-filter: blur(25px);
-    width: 500px;
-    height: 100px;
+    width: clamp(280px, 60vw, 500px);
+    height: clamp(70px, 15vw, 100px);
     border-radius: 50px;
-    
+
 }
 
 .cta-fast:hover {

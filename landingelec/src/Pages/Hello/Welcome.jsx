@@ -9,21 +9,21 @@ const welcome = () => {
 
     const urgenceRef = useRef()
     const numContentRef = useRef()
-    
 
-    useEffect(()=>{
-    const widthContent = numContentRef.current.scrollWidth
+
+    useEffect(() => {
+        const widthContent = numContentRef.current.scrollWidth
 
         gsap.fromTo(
-            urgenceRef.current ,
-             {
-                   color : "red" 
-            } ,
+            urgenceRef.current,
             {
-                repeat : -1,
-                color : "yellow",
-                duration : 1,
-                yoyo : true
+                color: "red"
+            },
+            {
+                repeat: -1,
+                color: "yellow",
+                duration: 1,
+                yoyo: true
             }
         )
 
@@ -31,28 +31,28 @@ const welcome = () => {
             numContentRef.current,
 
             {
-                color : "blue"
+                color: "blue"
 
             },
             {
-               color : "green",
-               repeat : -1,
-               yoyo : true,
+                color: "green",
+                repeat: -1,
+                yoyo: true,
 
             }
         )
 
-    },[])
+    }, [])
 
-   
+
 
     return (
         <div className='container-welcome' >
-            
+
             <div className='header-welcome-page' >
                 <div className="logo">Logo</div>
-                <div  className="num"> <div ref={numContentRef} className="num-content">06 61 31 59 07 - Urgence 24H/24 7J/7</div> </div>
-                <Button onclick={()=>{}} buttonName={"Appelez-maintenant"} classNameButton={"cta-welcome"} iconButton={""} />
+                <div className="num"> <div ref={numContentRef} className="num-content">06 61 31 59 07 - Urgence 24H/24 7J/7</div> </div>
+                <Button onclick={() => { }} buttonName={"Appelez-maintenant"} classNameButton={"cta-welcome"} iconButton={""} phoneNumber={"06 61 31 59 07"} />
             </div>
 
             <div className="phrases">
@@ -61,15 +61,16 @@ const welcome = () => {
 
                 <h3>Besoin d’un électricien rapidement ? <br />
                     Un professionnel de confiance vous répond
-                     immédiatement et arrive vite.
+                    immédiatement et arrive vite.
                 </h3>
 
-                
+
 
             </div>
+
             <div className="image-urgence">
-                    <div ref={urgenceRef} className="urgence">Urgence 24H/24 7J/7</div>
-                    <div className="image-welcome">aa</div>
+                <div ref={urgenceRef} className="urgence">Urgence 24H/24 7J/7</div>
+                <div className="image-welcome"></div>
             </div>
         </div>
     )

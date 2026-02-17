@@ -1,9 +1,10 @@
 .image-welcome {
     background-image: url(../../assets/welcomephoto.png);
     background-size: cover;
+    background-position: center;
     height: 100vh;
     width: 100%;
-    border: #7A481F solid 2px ;
+    border: #7A481F solid 2px;
 }
 
 
@@ -17,13 +18,13 @@
 .marquee-welcome {
     background: rgb(255, 255, 255);
     height: 50px;
-   
+
 }
 
 .marquee-welcome-text {
     /* background: rgb(26, 38, 207); */
     width: fit-content;
-    
+
 }
 
 .logo {
@@ -31,18 +32,19 @@
     align-items: center;
     justify-content: center;
     background: blue;
-    width: 100px;
+    width: clamp(60px, 15vw, 100px);
     border-radius: 100%;
+    font-size: clamp(12px, 2vw, 16px);
 }
 
 .cta-welcome {
-    font-family: "Roboto" ,serif;
-    font-size: xx-large;
+    font-family: "Roboto", serif;
+    font-size: clamp(1rem, 3vw, 1.75rem);
     background: #D03434;
     color: aliceblue;
     border: 0px;
-    width: 250px;
-    height: 85px;
+    width: clamp(140px, 30vw, 250px);
+    height: clamp(55px, 12vw, 85px);
     border-radius: 10px;
     padding: 5px;
 }
@@ -59,18 +61,21 @@
 }
 
 .container-welcome h1 {
-    font-size: 60px;
-    font-family: "Fugaz One",serif ;
+    font-size: clamp(28px, 6vw, 60px);
+    font-family: "Fugaz One", serif;
     color: #000F89;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0 clamp(10px, 2vw, 20px);
 }
+
 .container-welcome h3 {
-    font-size: 25px;
-    font-family: "Crimson Text",serif ;
+    font-size: clamp(16px, 3vw, 25px);
+    font-family: "Crimson Text", serif;
     color: #00000069;
     font-weight: normal;
     text-align: center;
+    padding: 0 clamp(15px, 3vw, 30px);
 }
 
 .header-welcome-page {
@@ -78,8 +83,9 @@
     /* background: #3fbb5e; */
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: auto;
     height: 80px;
+    padding-top: 15px;
 }
 
 .header-welcome-page .num {
@@ -87,12 +93,13 @@
     align-items: center;
     justify-content: center;
     /* background: #000; */
-    width: 75vw;
+    flex: 1;
+    text-align: center;
     height: 100%;
 }
 
 .num-content {
-    font-size: 55px;
+    font-size: clamp(18px, 5vw, 55px);
     font-weight: 500;
 }
 
@@ -101,27 +108,39 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-      
+
 }
 
 .urgence {
-    font-family: "Playwrite US Modern" ,serif;
+    font-family: "Playwrite US Modern", serif;
     position: relative;
-    top: 38px ;
-    font-size: x-large;
+    top: clamp(20px, 4vw, 38px);
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     font-weight: 700;
-    color: #FF0606 ;
+    color: #FF0606;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
-
+    height: clamp(70px, 15vw, 100px);
     min-width: fit-content;
-    padding-inline: 15px;
+    padding-inline: clamp(10px, 2vw, 15px);
     background: #ffffff;
     /* border: #7A481F solid 2px ; */
-    border: #080530 solid 2px ;
+    border: #080530 solid 2px;
     border-radius: 50px;
-
 }
 
+/* Responsive layout adjustments for mobile */
+@media (max-width: 480px) {
+    .header-welcome-page {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 10px;
+        padding: 15px 10px;
+    }
+
+    .header-welcome-page .num {
+        width: 100%;
+        order: 3;
+    }
+}

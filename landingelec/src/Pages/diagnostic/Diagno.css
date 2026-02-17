@@ -3,7 +3,7 @@
     flex-direction: column;
     /* align-items: center; */
     /* background: greenyellow; */
-    padding-bottom: 50px ;
+    padding-bottom: 50px;
     padding-top: 180px;
     justify-content: center;
     align-items: center;
@@ -26,12 +26,12 @@
 }
 
 
-.diagno-container  h1 {
+.diagno-container h1 {
 
     text-align: right;
     width: 62%;
     font-size: 50px;
-    font-family: "Fugaz One" ,serif;
+    font-family: "Fugaz One", serif;
 }
 
 .hero-diagno {
@@ -77,27 +77,30 @@
 .block .det {
     color: aliceblue;
     background: #050111b6;
-     border-radius: 5px;
-     font-family: "Roboto" ,serif;
-     padding-inline: 15px;
-     backdrop-filter: blur(15px);
-    
+    border-radius: 5px;
+    font-family: "Roboto", serif;
+    padding-inline: 15px;
+    backdrop-filter: blur(15px);
+
 }
 
 .block1 {
     background-image: url(../../assets/appel.png);
-    
+
 }
+
 .block2 {
     background-image: url(../../assets/diagno.png);
 
 }
+
 .block3 {
     background-image: url(../../assets/depa.png);
 
 }
 
-.cta-button-diagno , .bg-diagno {
+.cta-button-diagno,
+.bg-diagno {
     position: relative;
     bottom: 180px;
 }
@@ -123,8 +126,81 @@
     color: red;
     background: #ffffff;
 }
+
 .cta-button-diagno:active {
     border: 2px red solid;
     color: rgb(255, 255, 255);
     background: #db5959;
+}
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 1024px) {
+    .diagno-container {
+        padding-top: 120px;
+        margin-top: 0px;
+    }
+
+    .diagno-container h1 {
+        width: 80%;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .diagno-container {
+        padding-top: 100px;
+        margin-top: 0px;
+    }
+
+    .diagno-container h1 {
+        text-align: center;
+        width: 90%;
+        font-size: 32px;
+    }
+
+    .hero-diagno {
+        gap: 30px;
+    }
+
+    .block {
+        width: 90%;
+        max-width: 360px;
+    }
+
+    .bg-diagno {
+        height: 300px;
+        bottom: 100px;
+    }
+
+    .cta-button-diagno {
+        width: 90%;
+        max-width: 350px;
+        font-size: 20px;
+        height: 70px;
+        bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .diagno-container {
+        padding-top: 80px;
+    }
+
+    .diagno-container h1 {
+        font-size: 28px;
+    }
+
+    .block {
+        height: 320px;
+    }
+
+    .cta-button-diagno {
+        font-size: 18px;
+        bottom: 120px;
+    }
+
+    .bg-diagno {
+        bottom: 80px;
+    }
 }

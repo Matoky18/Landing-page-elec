@@ -1,31 +1,27 @@
 .container-service {
     display: flex;
     align-items: center;
-    margin-top: -225px;
-    display: flex;
+    margin-top: clamp(-50px, -20vw, -225px);
     flex-direction: column;
-    /* background: red; */
-    padding-bottom: 50px;
-    
+    padding-bottom: clamp(20px, 5vw, 50px);
 }
 
 .marquee-service {
-    /* background: blue;  */
-    font-size: 50px;
+    font-size: clamp(20px, 5vw, 50px);
     width: fit-content;
     color: rgb(14, 16, 121);
 }
 
 .Marquee-conaiter {
-    width: 100%;
-    width: 50%;
-    /* background: rgb(175, 73, 73); */
+    width: clamp(50%, 70vw, 95%);
 }
 
 .hero-service {
     display: flex;
-     align-items: center;
+    align-items: center;
     justify-content: center;
-    gap: 30px;
-    width: 100%;
+    gap: clamp(20px, 3vw, 30px);
+    width: auto;
+    flex-wrap: wrap;
+    padding: clamp(0px, 2vw, 15px);
 }

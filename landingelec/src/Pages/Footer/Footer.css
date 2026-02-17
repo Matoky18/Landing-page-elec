@@ -1,17 +1,229 @@
 .container-footer {
-    background: #332E2E;
-    color: aliceblue;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: #f1f5f9;
+    padding: 60px 20px 0;
+    position: relative;
+    overflow: hidden;
+    font-family: "Roboto", serif;
+}
+
+/* Effet de fond subtil */
+.container-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            #fbbf24 50%,
+            transparent 100%);
+}
+
+/* Grille principale du footer */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+/* Section principale (logo) */
+.footer-main {
+    grid-column: span 1;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fbbf24;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-tagline {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.footer-description {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+/* Sections du footer */
+.footer-section {
     display: flex;
     flex-direction: column;
+}
+
+.footer-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f1f5f9;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #fbbf24;
+    border-radius: 2px;
+}
+
+/* Listes */
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-item {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-item:hover {
+    color: #fbbf24;
+    transform: translateX(5px);
+}
+
+.footer-item a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-item a:hover {
+    color: #fbbf24;
+}
+
+/* Icônes */
+.footer-icon {
+    font-size: 1.2rem;
+    min-width: 24px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 30px;
 }
 
-.qualite-container-footer {
+/* Badge */
+.footer-badge {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: #0f172a;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+/* Barre inférieure */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px 20px;
+    margin-top: 20px;
+}
+
+.footer-bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between ;
-    width: 90%;
-    /* background: red; */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
+.footer-copyright {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Badges de qualité */
+.footer-badges {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.quality-badge {
+    background: rgba(251, 191, 36, 0.1);
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    color: #fbbf24;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.quality-badge:hover {
+    background: rgba(251, 191, 36, 0.2);
+    border-color: #fbbf24;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-main {
+        grid-column: span 1;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .footer-badges {
+        justify-content: center;
+    }
+
+    .container-footer {
+        padding: 40px 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo {
+        font-size: 1.5rem;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+    }
+
+    .footer-item {
+        font-size: 0.85rem;
+    }
+}
