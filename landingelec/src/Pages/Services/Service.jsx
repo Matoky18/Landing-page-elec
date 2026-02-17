@@ -4,12 +4,14 @@ import "./Service.css"
 import install from "../../assets/install.png"
 import rep from "../../assets/rep.png"
 import secu from "../../assets/secu.png"
+import Marquee from '../../components/Marquee'
  
 
 const Service = () => {
   return (
     <div className='container-service' >
-      <div className="marquee"><h1>06 61 31 59 07 - Urgence 24H/24 7J/7</h1></div>
+      
+      <Marquee text={"06 61 31 59 07 - Urgence 24H/24 7J/7  "}  textContainer={"marquee-service"} classNameMarquee={"Marquee-conaiter"} />
         <div className="hero-service">
           
             <Cart buttonCartName={"Contactez-nous"} 

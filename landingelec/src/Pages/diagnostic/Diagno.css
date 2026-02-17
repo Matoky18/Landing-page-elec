@@ -7,12 +7,27 @@
     padding-top: 180px;
     justify-content: center;
     align-items: center;
+    margin-top: -150px;
+}
 
+.container-maquee-diagno {
+    /* background: salmon; */
+    width: 100%;
+}
+
+.text-marquee-diagno {
+    color: black;
+    width: fit-content;
+    /* background: red; */
+}
+
+.diagno-container .h1 {
+    color: #1737c7;
 }
 
 
-.diagno-container h1 {
-    color: rgb(44, 64, 179);
+.diagno-container  h1 {
+
     text-align: right;
     width: 62%;
     font-size: 50px;
