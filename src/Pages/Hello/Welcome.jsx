@@ -48,12 +48,22 @@ const welcome = () => {
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
-                setIsStickyHidden(entry.isIntersecting);
+                if (entry.isIntersecting) {
+                    setIsStickyHidden(true);
+                } else {
+                    if (entry.boundingClientRect.top < 0) {
+                        // Element is above the viewport (we scrolled past it) -> Hide
+                        setIsStickyHidden(true);
+                    } else {
+                        // Element is below the viewport (we haven't reached it) -> Show
+                        setIsStickyHidden(false);
+                    }
+                }
             },
             { threshold: 0 }
         );
 
-        const target = document.getElementById('pre-diagnostic-title');
+        const target = document.getElementById('diagno-cta-container');
         if (target) {
             observer.observe(target);
         }

@@ -58,7 +58,9 @@ const Diagno = () => {
 
       <div className="bg-diagno"></div>
 
-      <Button classNameButton={"cta-button-diagno"} buttonName={"Contactez-nous maintenant!"} phoneNumber={"06 61 31 59 07"} />
+      <div id="diagno-cta-container">
+        <Button classNameButton={"cta-button-diagno"} buttonName={"Contactez-nous maintenant!"} phoneNumber={"06 61 31 59 07"} />
+      </div>
 
 
 
