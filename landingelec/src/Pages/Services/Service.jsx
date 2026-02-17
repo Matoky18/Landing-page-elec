@@ -5,7 +5,11 @@ import install from "../../assets/install.png"
 import rep from "../../assets/rep.png"
 import secu from "../../assets/secu.png"
 import Marquee from '../../components/Marquee'
- 
+import wrench from '../../assets/noto_hammer-and-wrench.png' 
+import noto from '../../assets/noto_electric-plug.png' 
+import secur from '../../assets/fxemoji_lock.png' 
+
+
 
 const Service = () => {
   return (
@@ -18,18 +22,19 @@ const Service = () => {
             cartName={"Dépannage éléctrique"} 
             detailsCart={"Appareils Défectueux, Panne Électrique, Disjoncteurs & Fusibles"} 
             urlImageCart={rep}
-            
+            iconCart={wrench}
             />
             <Cart buttonCartName={"Appelez maintenant"} 
             cartName={"Installation éléctrique"} 
             detailsCart={"Prises, Interrupteurs, Tableau Électrique, Éclairages, Mise à la Terre"}
-            iconCart={""}
+            iconCart={noto}
             urlImageCart={install}
             />
             <Cart buttonCartName={"Appelez vite"} 
             cartName={"Mise en sécurité"} 
             detailsCart={"Mise aux normes, disjoncteurs différentiels, protections des circuits"} 
             urlImageCart={secu}
+            iconCart={secur}
 
             />
       </div>

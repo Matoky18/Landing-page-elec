@@ -12,7 +12,9 @@ const Cart = ({buttonCartName,iconCart,cartName,detailsCart,urlImageCart}) => {
       
           <img src= {iconCart} alt="" />
       </div>
+
       <p>{detailsCart} </p>
+      
       <div style={{backgroundImage :  `url(${urlImageCart})` }} className="image-block"></div>
       <Button classNameButton={"cart-button"} buttonName={buttonCartName} />
       
