@@ -3,7 +3,7 @@
     flex-direction: column;
     /* align-items: center; */
     /* background: greenyellow; */
-    padding-bottom: 50px;
+    padding-bottom: 150px;
     padding-top: 180px;
     justify-content: center;
     align-items: center;
@@ -114,8 +114,12 @@
 
 
 .cta-button-diagno {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
     /* background: violet; */
-    width: 350px;
+    width: 375px;
     height: 90px;
     position: relative;
     bottom: 225px;
