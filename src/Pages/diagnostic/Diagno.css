@@ -10,6 +10,11 @@
     margin-top: -150px;
 }
 
+.diagno-container p {
+    font-family: "Crimson Text", serif;
+    /* font-weight: 300; */
+}
+
 .container-maquee-diagno {
     /* background: salmon; */
     width: 100%;

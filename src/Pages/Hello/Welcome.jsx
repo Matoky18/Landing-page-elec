@@ -9,6 +9,7 @@ const welcome = () => {
 
     const urgenceRef = useRef()
     const numContentRef = useRef()
+    const [isStickyHidden, setIsStickyHidden] = React.useState(false);
 
 
     useEffect(() => {
@@ -44,6 +45,26 @@ const welcome = () => {
 
     }, [])
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsStickyHidden(entry.isIntersecting);
+            },
+            { threshold: 0 }
+        );
+
+        const target = document.getElementById('pre-diagnostic-title');
+        if (target) {
+            observer.observe(target);
+        }
+
+        return () => {
+            if (target) {
+                observer.unobserve(target);
+            }
+        };
+    }, []);
+
 
 
     return (
@@ -52,7 +73,7 @@ const welcome = () => {
             <div className='header-welcome-page' >
                 <div className="logo">Logo</div>
                 <div className="num"> <div ref={numContentRef} className="num-content">06 61 31 59 07 - Urgence 24H/24 7J/7</div> </div>
-                <Button onclick={() => { }} buttonName={"Appelez-maintenant"} classNameButton={"cta-welcome"} iconButton={""} phoneNumber={"06 61 31 59 07"} />
+                <Button onclick={() => { }} buttonName={"Appelez-maintenant"} classNameButton={`cta-welcome ${isStickyHidden ? 'sticky-hidden' : ''}`} iconButton={""} phoneNumber={"06 61 31 59 07"} />
             </div>
 
             <div className="phrases">

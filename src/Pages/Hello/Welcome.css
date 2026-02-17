@@ -61,12 +61,12 @@
 }
 
 .container-welcome h1 {
-    font-size: clamp(28px, 6vw, 60px);
+    font-size: clamp(35px, 6vw, 60px);
     font-family: "Fugaz One", serif;
     color: #000F89;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 0 clamp(10px, 2vw, 20px);
+    padding: 0 clamp(10px, 2vw, 15px);
 }
 
 .container-welcome h3 {
@@ -83,7 +83,7 @@
     /* background: #3fbb5e; */
     justify-content: space-between;
     align-items: center;
-    width: auto;
+    width: 100%;
     height: 80px;
     padding-top: 15px;
 }
@@ -99,7 +99,7 @@
 }
 
 .num-content {
-    font-size: clamp(18px, 5vw, 55px);
+    font-size: clamp(18px, 3.5vw, 55px);
     font-weight: 500;
 }
 
@@ -130,17 +130,59 @@
     border-radius: 50px;
 }
 
+
+/* Sticky CTA for screens <= 1000px */
+@media (max-width: 1000px) {
+    .cta-welcome {
+        position: fixed;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 75%;
+        z-index: 1000;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .cta-welcome.sticky-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+
 /* Responsive layout adjustments for mobile */
 @media (max-width: 480px) {
     .header-welcome-page {
         flex-wrap: wrap;
         height: auto;
         gap: 10px;
-        padding: 15px 10px;
+        padding: 10px 10px;
+        justify-content: center;
+    }
+
+    .header-welcome-page .logo {
+        order: 1;
+        margin-right: auto;
+    }
+
+    .header-welcome-page .cta-welcome {
+        order: 2;
+        font-size: 1rem;
+        padding: 5px 10px;
+        width: auto;
+        height: auto;
     }
 
     .header-welcome-page .num {
         width: 100%;
         order: 3;
+        margin-top: 5px;
+    }
+
+    .num-content {
+        white-space: nowrap;
+        font-size: clamp(16px, 4vw, 20px);
     }
 }

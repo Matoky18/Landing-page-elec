@@ -3,12 +3,16 @@
     flex-direction: column;
     align-items: center;
     background: #876D64;
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 20px;
 }
 
 .container-FastService h1 {
-
     color: aliceblue;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .image-FastService {
@@ -16,29 +20,35 @@
     align-items: end;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    flex-grow: 1;
     background: #fffbfb;
     background-image: url("../../assets/fast.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    min-height: 300px;
 }
 
 .cta-fast {
     font-weight: bolder;
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.9rem, 2.5vw, 1.5rem);
     border: 2px solid black;
     color: #ee1621;
     background: #000000c4;
-    margin-bottom: clamp(30px, 5vw, 50px);
+    margin-bottom: clamp(20px, 5vw, 50px);
     backdrop-filter: blur(25px);
-    width: clamp(280px, 60vw, 500px);
-    height: clamp(70px, 15vw, 100px);
+    width: clamp(280px, 90vw, 500px);
+    height: clamp(60px, 15vw, 100px);
     border-radius: 50px;
-
 }
 
 .cta-fast:hover {
     background: #0000006b;
+}
 
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .image-FastService {
+        background-position: center bottom;
+    }
 }

@@ -197,12 +197,33 @@
 
     .footer-main {
         grid-column: span 1;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-section {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-list {
+        align-items: center;
+    }
+
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-item {
+        justify-content: center;
     }
 
     .footer-bottom-content {
         flex-direction: column;
         text-align: center;
-
     }
 
     .footer-badges {
