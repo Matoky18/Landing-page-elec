@@ -3,4 +3,96 @@
     background-size: cover;
     height: 100vh;
     width: 100%;
+    border: #7A481F solid 2px ;
 }
+
+.container-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: blue;
+    width: 100px;
+    border-radius: 100%;
+}
+
+.cta-welcome {
+    font-family: "Roboto" ,serif;
+    font-size: xx-large;
+    background: #D03434;
+    color: aliceblue;
+    border: 0px;
+    width: 250px;
+    height: 85px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.iconPhone {
+    width: 150px;
+    height: 150px;
+}
+
+.cta-welcome:hover {
+    color: red;
+    background: whitesmoke;
+    border: solid red 1px;
+}
+
+.container-welcome h1 {
+    font-size: 60px;
+    font-family: "Fugaz One",serif ;
+    color: #000F89;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container-welcome h3 {
+    font-size: 25px;
+    font-family: "Crimson Text",serif ;
+    color: #00000069;
+    font-weight: normal;
+    text-align: center;
+}
+
+.header-welcome-page {
+    display: flex;
+    /* background: #3fbb5e; */
+    justify-content: space-between;
+    width: 100%;
+}
+
+.image-urgence {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+      
+}
+
+.urgence {
+    font-family: "Playwrite US Modern" ,serif;
+    position: relative;
+    top: 38px ;
+    font-size: x-large;
+    font-weight: 700;
+    color: #FF0606 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+
+    min-width: fit-content;
+    padding-inline: 15px;
+    background: #ffffff;
+    /* border: #7A481F solid 2px ; */
+    border: #080530 solid 2px ;
+    border-radius: 50px;
+
+}
+

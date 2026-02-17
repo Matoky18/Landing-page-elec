@@ -4,6 +4,8 @@ import FastService from './Pages/FastService/FastService'
 import Footer from './Pages/Footer/Footer'
 import Welcome from './Pages/Hello/Welcome'
 import Service from './Pages/Services/Service'
+import "./App.css"
+
 
 function App() {
 

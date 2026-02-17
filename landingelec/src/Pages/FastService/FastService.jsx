@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../../components/Button'
+import "./FastService.css"
 
 const FastService = () => {
   return (
@@ -7,9 +8,12 @@ const FastService = () => {
         <div className="stars">
 
         </div>
-        <p>VOTRE ELECTRICIEN EST  PRET A INTERVENIR PRES DE CHEZ VOUS !</p>
-        <div className="image-FastService"></div>
-        <Button buttonName={"Chez vous en 30 minutes – Appelez"} />
+        <h1>VOTRE ELECTRICIEN EST  PRET A INTERVENIR PRES DE CHEZ VOUS !</h1>
+        <div className="image-FastService">
+
+            <Button classNameButton={"cta-fast"} buttonName={"Chez vous en 30 minutes – Appelez !"} />
+
+        </div>
     </div>
   )
 }

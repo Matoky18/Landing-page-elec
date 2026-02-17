@@ -1,3 +1,112 @@
 .diagno-container {
-    background: greenyellow;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* background: greenyellow; */
+    padding-bottom: 50px ;
+    padding-top: 180px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.diagno-container h1 {
+    text-align: right;
+    width: 62%;
+    font-size: 50px;
+    font-family: "Fugaz One" ,serif;
+}
+
+.hero-diagno {
+    /* background: #4a73b1; */
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
+
+    /* width: 75% ; */
+}
+
+.bg-diagno {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    /* background: rgb(156, 109, 21); */
+    width: 100%;
+    height: 400px;
+    z-index: 0;
+    opacity: 0.3;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-image: url(../../assets/outils.png);
+}
+
+.block {
+    /* background: #8e16b3; */
+    width: 360px;
+    height: 360px;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 5px;
+
+}
+
+.block .det {
+    color: aliceblue;
+    background: #050111b6;
+     border-radius: 5px;
+     font-family: "Roboto" ,serif;
+     padding-inline: 15px;
+     backdrop-filter: blur(15px);
+    
+}
+
+.block1 {
+    background-image: url(../../assets/appel.png);
+    
+}
+.block2 {
+    background-image: url(../../assets/diagno.png);
+
+}
+.block3 {
+    background-image: url(../../assets/depa.png);
+
+}
+
+.cta-button-diagno , .bg-diagno {
+    position: relative;
+    bottom: 180px;
+}
+
+
+
+.cta-button-diagno {
+    /* background: violet; */
+    width: 350px;
+    height: 90px;
+    position: relative;
+    bottom: 225px;
+    border: #C3C2C0;
+    background: #ED1B24;
+    color: aliceblue;
+    font-size: 25px;
+    border-radius: 5px;
+
+}
+
+.cta-button-diagno:hover {
+    border: 2px red solid;
+    color: red;
+    background: #ffffff;
+}
+.cta-button-diagno:active {
+    border: 2px red solid;
+    color: rgb(255, 255, 255);
+    background: #db5959;
 }

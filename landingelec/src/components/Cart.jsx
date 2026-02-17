@@ -3,15 +3,17 @@ import "./Cart.css"
 import Button from './Button'
 
 
-const Cart = ({buttonCartName,iconCart}) => {
+const Cart = ({buttonCartName,iconCart,cartName,detailsCart,urlImageCart}) => {
   return (
     <div className='cart-container' >
       
-      <h1>cart-name</h1>
+      <div className="top-cart">
+          <h1>{cartName}</h1>
       
-      <img src= {iconCart} alt="" />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis </p>
-      <div className="image-block">a</div>
+          <img src= {iconCart} alt="" />
+      </div>
+      <p>{detailsCart} </p>
+      <div style={{backgroundImage :  `url(${urlImageCart})` }} className="image-block"></div>
       <Button classNameButton={"cart-button"} buttonName={buttonCartName} />
       
     </div>
