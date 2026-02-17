@@ -83,7 +83,7 @@ const welcome = () => {
             <div className='header-welcome-page' >
                 <div className="logo">Logo</div>
                 <div className="num"> <div ref={numContentRef} className="num-content">06 61 31 59 07 - Urgence 24H/24 7J/7</div> </div>
-                <Button onclick={() => { }} buttonName={"Appelez-maintenant"} classNameButton={`cta-welcome ${isStickyHidden ? 'sticky-hidden' : ''}`} iconButton={""} phoneNumber={"06 61 31 59 07"} />
+                <Button onclick={() => { }} buttonName={"Appelez-maintenant"} classNameButton={`cta-welcome ${isStickyHidden ? 'sticky-hidden' : ''}`} iconButton={<i className='bx bxs-phone-call' style={{ marginRight: "10px" }} ></i>} phoneNumber={"06 61 31 59 07"} />
             </div>
 
             <div className="phrases">

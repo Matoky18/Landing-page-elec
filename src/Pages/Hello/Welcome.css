@@ -15,6 +15,13 @@
     width: 100%;
 }
 
+
+.container-welcome .phrases {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .marquee-welcome {
     background: rgb(255, 255, 255);
     height: 50px;
@@ -75,7 +82,7 @@
     color: #D03434;
     text-align: center;
     margin-top: -10px;
-    margin-bottom: 20px;
+    margin-bottom: -20px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }

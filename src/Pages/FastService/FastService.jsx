@@ -11,7 +11,7 @@ const FastService = () => {
       <h1>VOTRE ELECTRICIEN EST  PRET A INTERVENIR PRES DE CHEZ VOUS !</h1>
       <div className="image-FastService">
 
-        <Button classNameButton={"cta-fast"} buttonName={"Chez vous en 30 minutes – Appelez !"} phoneNumber={"06 61 31 59 07"} />
+        <Button classNameButton={"cta-fast"} buttonName={"Chez vous en 30 minutes – Appelez !"} phoneNumber={"06 61 31 59 07"} iconButton={<i className='bx bxs-phone-call' style={{ marginRight: "10px" }} ></i>} />
 
       </div>
     </div>
