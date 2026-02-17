@@ -24,6 +24,7 @@
 .text-marquee-diagno {
     color: black;
     width: fit-content;
+    white-space: nowrap;
     /* background: red; */
 }
 
@@ -149,6 +150,7 @@
     .diagno-container {
         padding-top: 120px;
         margin-top: 0px;
+        margin-bottom: -250px;
     }
 
     .diagno-container h1 {

@@ -31,7 +31,7 @@
 .marquee-welcome-text {
     /* background: rgb(26, 38, 207); */
     width: fit-content;
-
+    white-space: nowrap;
 }
 
 .logo {

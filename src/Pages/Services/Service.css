@@ -9,8 +9,9 @@
 
 .marquee-service {
     font-size: clamp(30px, 5vw, 50px);
-    min-width: fit-content;
+    width: fit-content;
     color: rgb(14, 16, 121);
+    white-space: nowrap;
 }
 
 .Marquee-conaiter {

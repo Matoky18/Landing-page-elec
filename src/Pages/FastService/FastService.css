@@ -2,17 +2,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #876D64;
+    background: linear-gradient(180deg, #876D64 0%, #5d4a44 100%);
     min-height: 100vh;
     padding-bottom: 20px;
 }
 
 .container-FastService h1 {
     color: aliceblue;
-    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
     text-align: center;
     padding: 20px;
     margin-top: 20px;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    font-family: "Fugaz One", serif;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    max-width: 1200px;
 }
 
 .image-FastService {
@@ -21,13 +26,16 @@
     justify-content: center;
     width: 100%;
     flex-grow: 1;
-    background: #fffbfb;
+    /* background: #fffbfb; */
     background-image: url("../../assets/fast.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 300px;
+    position: relative;
 }
+
+/* Optional overlay to make text pop if needed, but image handles it mostly */
 
 .cta-fast {
     font-weight: bolder;
