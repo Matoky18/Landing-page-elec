@@ -120,6 +120,7 @@
     font-size: clamp(24px, 3.8vw, 55px);
     font-weight: 500;
     padding: 10px;
+    white-space: nowrap;
     /* background: red; */
 
 }

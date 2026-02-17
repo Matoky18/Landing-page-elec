@@ -1,14 +1,15 @@
 .container-service {
     display: flex;
     align-items: center;
-    margin-top: clamp(-50px, -20vw, -225px);
+    /* margin-top: clamp(-50px, -20vw, -225px); */
+    margin-top: -20vw;
     flex-direction: column;
     padding-bottom: clamp(20px, 5vw, 50px);
 }
 
 .marquee-service {
-    font-size: clamp(20px, 5vw, 50px);
-    width: fit-content;
+    font-size: clamp(30px, 5vw, 50px);
+    min-width: fit-content;
     color: rgb(14, 16, 121);
 }
 
