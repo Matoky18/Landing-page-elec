@@ -5,7 +5,7 @@ import Footer from './Pages/Footer/Footer'
 import Welcome from './Pages/Hello/Welcome'
 import Service from './Pages/Services/Service'
 import "./App.css"
-
+import gsap from "gsap"
 
 function App() {
 

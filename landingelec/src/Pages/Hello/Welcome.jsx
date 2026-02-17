@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../../components/Button'
 import './Welcome.css'
+import Marquee from '../../components/Marquee'
 const welcome = () => {
 
    
@@ -10,6 +11,7 @@ const welcome = () => {
 
             <div className='header-welcome-page' >
                 <div className="logo">Logo</div>
+                <Marquee/>
                 <Button onclick={()=>{}} buttonName={"Appelez-maintenant"} classNameButton={"cta-welcome"} iconButton={""} />
             </div>
 
