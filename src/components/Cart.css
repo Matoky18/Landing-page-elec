@@ -61,7 +61,7 @@
     /* width: clamp(90%, 35vw, 220px); */
     max-width: 400px;
     width: 100%;
-    height: clamp(40px, 7vw, 45px);
+    height: 60px;
     margin-top: 15px;
     border: solid #ED1B24 2px;
     border-radius: 5px;

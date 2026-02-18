@@ -60,7 +60,7 @@
     background: #D03434;
     color: aliceblue;
     border: 0px;
-    width: clamp(140px, 30vw, 250px);
+    width: clamp(140px, 35vw, 350px);
     height: clamp(55px, 12vw, 85px);
     border-radius: 10px;
     padding: 5px;
