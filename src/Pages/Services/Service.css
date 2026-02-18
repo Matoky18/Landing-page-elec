@@ -28,6 +28,22 @@
     padding: clamp(0px, 2vw, 15px);
 }
 
+
+
+
+@media screen and (max-width: 1300px) {
+    .container-service {
+        margin-top: -650px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container-service {
+        margin-top: -850px;
+    }
+}
+
 @media (max-width : 767px) {
     .container-service {
         margin-top: -850px;

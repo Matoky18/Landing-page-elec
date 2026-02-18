@@ -148,6 +148,22 @@
 
 /* Media Queries for Responsiveness */
 
+@media screen and (max-width: 1300px) {
+    .diagno-container {
+        margin-top: -200px;
+        margin-bottom: -250px;
+    }
+
+    .bg-diagno {
+        height: 600px;
+        bottom: 500px;
+    }
+
+    .cta-button-diagno {
+        bottom: 550px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .diagno-container {
         margin-top: -200px;
@@ -161,7 +177,12 @@
     }
 
     .bg-diagno {
-        height: 50vh;
+        height: 800px;
+        bottom: 700px;
+    }
+
+    .cta-button-diagno {
+        bottom: 745px;
     }
 
 
