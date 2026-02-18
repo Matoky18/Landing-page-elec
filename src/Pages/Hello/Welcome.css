@@ -7,6 +7,24 @@
     border: #7A481F solid 2px;
 }
 
+.logo {
+    background-image: url(../../assets/logoElecJulien.png);
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(60px, 10vw, 100px);
+    height: clamp(60px, 10vw, 100px);
+    border-radius: 100%;
+    font-size: clamp(12px, 2vw, 16px);
+}
+
 
 .container-welcome {
     display: flex;
@@ -34,15 +52,7 @@
     white-space: nowrap;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: blue;
-    width: clamp(60px, 15vw, 100px);
-    border-radius: 100%;
-    font-size: clamp(12px, 2vw, 16px);
-}
+
 
 .cta-welcome {
     font-family: "Roboto", serif;
