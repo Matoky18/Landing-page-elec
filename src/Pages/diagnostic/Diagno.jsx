@@ -19,7 +19,7 @@ const Diagno = () => {
         scrollTrigger: {
           trigger: containerRef.current,
           start: "top 80%",
-          toggleActions: "restart none none none",
+          toggleActions: "restart none restart none",
         },
         defaults: { ease: "power3.out", duration: 1 }
       });
