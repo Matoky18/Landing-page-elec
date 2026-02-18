@@ -24,7 +24,7 @@ const Welcome = () => {
                 { color: "red" },
                 {
                     repeat: -1,
-                    color: "yellow",
+                    color: "blue",
                     duration: 1,
                     yoyo: true
                 }

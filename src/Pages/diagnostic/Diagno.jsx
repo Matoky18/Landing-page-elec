@@ -35,7 +35,7 @@ const Diagno = () => {
         )
         .fromTo(".bg-diagno",
           { opacity: 0, scale: 1.05 },
-          { opacity: 1, scale: 1, duration: 1.5 },
+          { opacity: 0.3, scale: 1, duration: 1.5 },
           "-=1"
         )
         .fromTo("#diagno-cta-container",
@@ -80,11 +80,11 @@ const Diagno = () => {
         <div className="block2 block">
 
           <div className="det">
-            <h2>Appeler Eléctricien Julien</h2>
+            <h2>Pré-Diagnostic Gratuit</h2>
             <p>
-              Une infiltration par votre toiture ?
-              Des tuiles déplacées by le vent ?
-              Vous êtes au bon endroit : on s'occupe de tout.
+              réponds gratuitement 24H/24 7J/7 par
+              téléphone. Nous identifions votre
+              cas de figure en quelques instants.
             </p>
           </div>
 
@@ -94,11 +94,10 @@ const Diagno = () => {
         <div className="block3 block">
 
           <div className="det">
-            <h2>Appeler Eléctricien Julien</h2>
+            <h2>Intervention </h2>
             <p>
-              Une infiltration par votre toiture ?
-              Des tuiles déplacées by le vent ?
-              Vous êtes au bon endroit : on s'occupe de tout.
+              Un électricien vérifié et disponible prés de chez vous vous
+              contacte immédiatement pour intervenir sous 30 minutes.
             </p>
           </div>
 
