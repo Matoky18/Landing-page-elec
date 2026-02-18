@@ -193,8 +193,8 @@
     }
 
     .bg-diagno {
-        height: 300px;
-        bottom: 100px;
+        height: 800px;
+        bottom: 800px;
     }
 
     .cta-button-diagno {
@@ -202,7 +202,7 @@
         max-width: 350px;
         font-size: 20px;
         height: 70px;
-        bottom: 150px;
+        bottom: 750px;
     }
 }
 
