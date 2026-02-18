@@ -219,13 +219,15 @@
     }
 
     .num-content {
-
-        font-size: clamp(16px, 5vw, 25px);
+        font-size: clamp(33px, 6vw, 60px);
+        /* Adjusted to match h1 roughly */
         font-weight: bolder;
-
         /* background: #a35f5f; */
-
         /* width: 90vw; */
+    }
+
+    .desktop-text {
+        display: none;
     }
 
     .image-urgence {
