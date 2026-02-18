@@ -59,4 +59,10 @@
     .image-FastService {
         background-position: center bottom;
     }
+
+    .cta-fast {
+        font-size: 22px;
+        padding-block: 35px;
+    }
+
 }
