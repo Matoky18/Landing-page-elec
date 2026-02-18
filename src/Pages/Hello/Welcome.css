@@ -166,13 +166,16 @@
         bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
-        width: 75%;
-        max-width: 400px;
+        width: 90%;
+        max-width: 500px;
         z-index: 1000;
         transition: opacity 0.3s ease, visibility 0.3s ease;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     }
 
+    .container-welcome .phrases {
+        margin-top: -25px;
+    }
 
 
     .cta-welcome.sticky-hidden {
@@ -205,7 +208,7 @@
         order: 2;
         font-size: 1.5rem;
         padding: 5px 10px;
-        width: 75%;
+        width: 90%;
         height: 70px;
     }
 
