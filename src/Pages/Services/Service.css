@@ -39,3 +39,10 @@
         bottom: 50px;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .container-service {
+        margin-top: -110vh;
+
+    }
+}
