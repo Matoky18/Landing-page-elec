@@ -45,8 +45,7 @@ const Footer = () => {
               <span className="footer-badge">24/7</span>
               Urgences
             </li>
-            <li className="footer-item">Lun - Ven: 8h - 19h</li>
-            <li className="footer-item">Sam: 9h - 17h</li>
+
 
           </ul>
         </div>

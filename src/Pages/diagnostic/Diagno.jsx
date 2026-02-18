@@ -69,9 +69,9 @@ const Diagno = () => {
           <div className="det">
             <h2>Appeler Eléctricien Julien</h2>
             <p>
-              Une infiltration par votre toiture ?
-              Des tuiles déplacées par le vent ?
-              Vous êtes au bon endroit : on s'occupe de tout.
+              Besoin d’un électricien ? Coupures
+              , fils défectueux, installations à
+              réparer… nous intervenons sur place immédiatement.
             </p>
           </div>
         </div>
