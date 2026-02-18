@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import "./Button.css"
 
 
-const Button = ({ buttonName, onclick, classNameButton, iconButton, phoneNumber }) => {
+const Button = forwardRef(({ buttonName, onclick, classNameButton, iconButton, phoneNumber }, ref) => {
   const handleClick = (e) => {
     if (phoneNumber) {
       const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -24,10 +24,10 @@ const Button = ({ buttonName, onclick, classNameButton, iconButton, phoneNumber 
   };
 
   return (
-    <button className={`button ${classNameButton}`} onClick={handleClick}>
+    <button ref={ref} className={`button ${classNameButton}`} onClick={handleClick}>
       {iconButton} {buttonName}
     </button>
   );
-};
+});
 
 export default Button
