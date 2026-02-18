@@ -91,7 +91,8 @@ const welcome = () => {
                 <h1> Electricité Julien</h1>
                 <h2 className="experience-text">Plus de 25 ans d’expérience</h2>
 
-                <h3>Besoin d’un électricien rapidement ? <br />
+                <h3>
+                    Besoin d’un électricien rapidement ? <br />
                     Un professionnel de confiance vous répond
                     immédiatement et arrive vite.
                 </h3>

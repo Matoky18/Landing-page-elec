@@ -144,25 +144,37 @@
     background: #db5959;
 }
 
+
+
 /* Media Queries for Responsiveness */
 
 @media screen and (max-width: 1024px) {
     .diagno-container {
-        padding-top: 120px;
-        margin-top: 0px;
+        margin-top: -200px;
         margin-bottom: -250px;
     }
 
     .diagno-container h1 {
         width: 80%;
         font-size: 40px;
+        text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.5);
     }
+
+    .bg-diagno {
+        height: 50vh;
+    }
+
+
 }
 
 @media screen and (max-width: 768px) {
     .diagno-container {
-        padding-top: 100px;
+        padding-top: 0px;
         margin-top: 0px;
+    }
+
+    .container-maquee-diagno {
+        margin-bottom: -60px;
     }
 
     .diagno-container h1 {
@@ -196,11 +208,16 @@
 
 @media screen and (max-width: 480px) {
     .diagno-container {
-        padding-top: 80px;
+        padding-top: 0px;
+        margin-top: -10px;
     }
 
     .diagno-container h1 {
         font-size: 28px;
+    }
+
+    .container-maquee-diagno {
+        margin-bottom: -70px;
     }
 
     .block {

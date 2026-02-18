@@ -88,7 +88,7 @@
 }
 
 .container-welcome h3 {
-    font-size: clamp(16px, 3vw, 25px);
+    font-size: clamp(18px, 3vw, 25px);
     font-family: "Crimson Text", serif;
     color: #00000069;
     font-weight: normal;
@@ -126,6 +126,8 @@
 }
 
 .image-urgence {
+    position: relative;
+    bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,14 +138,16 @@
 .urgence {
     font-family: "Playwrite US Modern", serif;
     position: relative;
-    top: clamp(20px, 4vw, 38px);
+    /* top: clamp(20px, 4vw, 38px); */
+    top: 50px;
+    height: 100px;
     font-size: clamp(1rem, 2.5vw, 1.5rem);
     font-weight: 700;
     color: #FF0606;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: clamp(70px, 15vw, 100px);
+    /* height: clamp(70px, 15vw, 100px); */
     min-width: fit-content;
     padding-inline: clamp(10px, 2vw, 15px);
     background: #ffffff;
@@ -184,7 +188,7 @@
     .header-welcome-page {
         flex-wrap: wrap;
         height: auto;
-        gap: 10px;
+
         padding: 10px 10px;
         justify-content: center;
     }
@@ -212,12 +216,17 @@
     }
 
     .num-content {
-        white-space: nowrap;
+
         font-size: clamp(16px, 5vw, 25px);
         font-weight: bolder;
 
         /* background: #a35f5f; */
 
         /* width: 90vw; */
+    }
+
+    .image-urgence {
+        bottom: 50px;
+        position: relative;
     }
 }
