@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Cart from '../../components/Cart'
 import "./Service.css"
 import install from "../../assets/install.png"
@@ -8,12 +8,40 @@ import Marquee from '../../components/Marquee'
 import wrench from '../../assets/noto_hammer-and-wrench.png'
 import noto from '../../assets/noto_electric-plug.png'
 import secur from '../../assets/fxemoji_lock.png'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger);
 
 
 
 const Service = () => {
+  const containerRef = useRef(null)
+
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.fromTo(".cart-container",
+        { y: 50, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          stagger: 0.2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: containerRef.current,
+            start: "top 80%",
+            toggleActions: "restart none restart none",
+          }
+        }
+      );
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, [])
+
   return (
-    <div className='container-service' >
+    <div ref={containerRef} className='container-service' >
 
       <Marquee text={"06 61 31 59 07 - Urgence 24H/24 7J/7  "} textContainer={"marquee-service"} classNameMarquee={"Marquee-conaiter"} />
       <div className="hero-service">
