@@ -183,6 +183,19 @@
         visibility: hidden;
         pointer-events: none;
     }
+
+    .image-urgence {
+        bottom: 35px;
+        position: relative;
+    }
+
+    .image-urgence .urgence {
+
+        font-size: clamp(25px, 5vw, 35px);
+        height: 70px;
+        top: 35px;
+    }
+
 }
 
 
@@ -247,6 +260,7 @@
     }
 
     .image-urgence .urgence {
+        font-size: 5vw;
         width: 75vw;
         height: 50px;
         top: 25px;
