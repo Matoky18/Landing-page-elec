@@ -222,8 +222,19 @@
         font-size: clamp(33px, 6vw, 60px);
         /* Adjusted to match h1 roughly */
         font-weight: bolder;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
         /* background: #a35f5f; */
         /* width: 90vw; */
+    }
+
+    .num-content i {
+        font-size: inherit;
+        display: flex;
+        align-items: center;
+        height: 100%;
     }
 
     .desktop-text {

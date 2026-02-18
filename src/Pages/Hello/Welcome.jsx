@@ -9,6 +9,7 @@ const welcome = () => {
 
     const urgenceRef = useRef()
     const numContentRef = useRef()
+    const phoneIconRef = useRef()
     const [isStickyHidden, setIsStickyHidden] = React.useState(false);
 
 
@@ -40,6 +41,19 @@ const welcome = () => {
                 repeat: -1,
                 yoyo: true,
 
+            }
+        )
+
+        gsap.fromTo(
+            phoneIconRef.current,
+            { rotation: -10 },
+            {
+                rotation: 10,
+                duration: 0.1,
+                repeat: -1,
+                yoyo: true,
+                ease: "linear",
+                transformOrigin: "center center"
             }
         )
 
@@ -82,7 +96,7 @@ const welcome = () => {
 
             <div className='header-welcome-page' >
                 <div className="logo">Logo</div>
-                <div className="num"> <div ref={numContentRef} className="num-content">06 61 31 59 07<span className="desktop-text"> - Urgence 24H/24 7J/7</span></div> </div>
+                <div className="num"> <div ref={numContentRef} className="num-content"><i ref={phoneIconRef} className='bx bxs-phone' style={{ marginRight: "10px", display: "inline-block" }}></i>06 61 31 59 07<span className="desktop-text"> - Urgence 24H/24 7J/7</span></div> </div>
                 <Button onclick={() => { }} buttonName={"Appelez-maintenant"} classNameButton={`cta-welcome ${isStickyHidden ? 'sticky-hidden' : ''}`} iconButton={<i className='bx bxs-phone-call' style={{ marginRight: "10px" }} ></i>} phoneNumber={"06 61 31 59 07"} />
             </div>
 
