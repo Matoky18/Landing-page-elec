@@ -5,58 +5,74 @@ import Marquee from '../../components/Marquee'
 import gsap from "gsap";
 
 
-const welcome = () => {
+const Welcome = () => {
 
     const urgenceRef = useRef()
     const numContentRef = useRef()
     const phoneIconRef = useRef()
+    const logoRef = useRef()
+    const phrasesRef = useRef()
+    const imageWelcomeRef = useRef()
     const [isStickyHidden, setIsStickyHidden] = React.useState(false);
 
 
     useEffect(() => {
-        const widthContent = numContentRef.current.scrollWidth
+        let ctx = gsap.context(() => {
+            // Internal animations (Repeating)
+            gsap.fromTo(
+                urgenceRef.current,
+                { color: "red" },
+                {
+                    repeat: -1,
+                    color: "yellow",
+                    duration: 1,
+                    yoyo: true
+                }
+            )
 
-        gsap.fromTo(
-            urgenceRef.current,
-            {
-                color: "red"
-            },
-            {
-                repeat: -1,
-                color: "yellow",
-                duration: 1,
-                yoyo: true
-            }
-        )
+            gsap.fromTo(
+                numContentRef.current,
+                { color: "blue" },
+                {
+                    color: "green",
+                    repeat: -1,
+                    yoyo: true,
+                }
+            )
 
-        gsap.fromTo(
-            numContentRef.current,
+            gsap.fromTo(
+                phoneIconRef.current,
+                { rotation: -10 },
+                {
+                    rotation: 10,
+                    duration: 0.1,
+                    repeat: -1,
+                    yoyo: true,
+                    ease: "linear",
+                    transformOrigin: "center center"
+                }
+            )
 
-            {
-                color: "blue"
+            // Entrance Timeline (Surgical)
+            const tl = gsap.timeline({ defaults: { ease: "power3.out", duration: 0.8 } });
 
-            },
-            {
-                color: "green",
-                repeat: -1,
-                yoyo: true,
+            tl.fromTo([logoRef.current, numContentRef.current.parentElement],
+                { y: -30, opacity: 0 },
+                { y: 0, opacity: 1, stagger: 0.1 }
+            )
+                .fromTo(phrasesRef.current.children,
+                    { y: 30, opacity: 0 },
+                    { y: 0, opacity: 1, stagger: 0.15 },
+                    "-=0.4"
+                )
+                .fromTo(imageWelcomeRef.current,
+                    { y: 40, opacity: 0 },
+                    { y: 0, opacity: 1 },
+                    "-=0.5"
+                );
+        });
 
-            }
-        )
-
-        gsap.fromTo(
-            phoneIconRef.current,
-            { rotation: -10 },
-            {
-                rotation: 10,
-                duration: 0.1,
-                repeat: -1,
-                yoyo: true,
-                ease: "linear",
-                transformOrigin: "center center"
-            }
-        )
-
+        return () => ctx.revert();
     }, [])
 
     useEffect(() => {
@@ -95,12 +111,12 @@ const welcome = () => {
         <div className='container-welcome' >
 
             <div className='header-welcome-page' >
-                <div className="logo"></div>
+                <div ref={logoRef} className="logo"></div>
                 <div className="num"> <div ref={numContentRef} className="num-content"><i ref={phoneIconRef} className='bx bxs-phone' style={{ marginRight: "10px", display: "inline-block" }}></i>06 61 31 59 07<span className="desktop-text"> - Urgence 24H/24 7J/7</span></div> </div>
                 <Button onclick={() => { }} buttonName={"Appelez-maintenant"} classNameButton={`cta-welcome ${isStickyHidden ? 'sticky-hidden' : ''}`} iconButton={<i className='bx bxs-phone-call' style={{ marginRight: "10px" }} ></i>} phoneNumber={"06 61 31 59 07"} />
             </div>
 
-            <div className="phrases">
+            <div ref={phrasesRef} className="phrases">
 
                 <h1> Electricité Julien</h1>
                 <h2 className="experience-text">Plus de 25 ans d’expérience</h2>
@@ -113,7 +129,7 @@ const welcome = () => {
 
             </div>
 
-            <div className="image-urgence">
+            <div ref={imageWelcomeRef} className="image-urgence">
                 <div ref={urgenceRef} className="urgence">Urgence 24H/24 7J/7</div>
                 <div className="image-welcome"></div>
             </div>
@@ -123,4 +139,4 @@ const welcome = () => {
     )
 }
 
-export default welcome
+export default Welcome
