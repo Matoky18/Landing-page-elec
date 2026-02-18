@@ -242,7 +242,13 @@
     }
 
     .image-urgence {
-        bottom: 50px;
+        bottom: 25px;
         position: relative;
+    }
+
+    .image-urgence .urgence {
+        width: 75vw;
+        height: 50px;
+        top: 25px;
     }
 }

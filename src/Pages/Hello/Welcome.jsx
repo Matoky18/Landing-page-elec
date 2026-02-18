@@ -117,6 +117,8 @@ const welcome = () => {
                 <div ref={urgenceRef} className="urgence">Urgence 24H/24 7J/7</div>
                 <div className="image-welcome"></div>
             </div>
+
+
         </div>
     )
 }
