@@ -58,7 +58,7 @@ const FastService = () => {
           ref={buttonRef}
           classNameButton={"cta-fast"}
           buttonName={"Chez vous en 30 minutes  Appelez !"}
-          phoneNumber={"06 61 31 59 07"}
+          phoneNumber={"06 18 51 59 07"}
           iconButton={<i className='bx bxs-phone-call' style={{ marginRight: "10px" }} ></i>}
         />
 

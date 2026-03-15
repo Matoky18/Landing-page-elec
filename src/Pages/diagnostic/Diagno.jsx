@@ -60,7 +60,7 @@ const Diagno = () => {
   return (
     <div ref={containerRef} className='diagno-container' >
 
-      <Marquee textContainer={"text-marquee-diagno"} classNameMarquee={"container-maquee-diagno"} text={"06 61 31 59 07 - Urgence 24H/24 7J/7"} />
+      <Marquee textContainer={"text-marquee-diagno"} classNameMarquee={"container-maquee-diagno"} text={"06 18 51 59 07 - Urgence 24H/24 7J/7"} />
 
       <h1 id="pre-diagnostic-title" className='h1' >Pré-Diagnostic Gratuit</h1>
 
@@ -115,7 +115,7 @@ const Diagno = () => {
           ref={buttonRef}
           classNameButton={"cta-button-diagno"}
           buttonName={"Contactez-nous maintenant!"}
-          phoneNumber={"06 61 31 59 07"}
+          phoneNumber={"06 18 51 59 07"}
           iconButton={<i className='bx bxs-phone-call' ></i>}
         />
       </div>

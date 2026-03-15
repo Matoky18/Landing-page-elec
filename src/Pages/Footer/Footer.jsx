@@ -21,7 +21,7 @@ const Footer = () => {
           <ul className="footer-list">
             <li className="footer-item">
               <span className="footer-icon">📞</span>
-              <a href="tel:0661315907">06 61 31 59 07</a>
+              <a href="tel:06 18 51 59 07">06 18 51 59 07</a>
             </li>
           </ul>
         </div>

@@ -43,7 +43,7 @@ const Service = () => {
   return (
     <div ref={containerRef} className='container-service' >
 
-      <Marquee text={"06 61 31 59 07 - Urgence 24H/24 7J/7  "} textContainer={"marquee-service"} classNameMarquee={"Marquee-conaiter"} />
+      <Marquee text={"06 18 51 59 07 - Urgence 24H/24 7J/7  "} textContainer={"marquee-service"} classNameMarquee={"Marquee-conaiter"} />
       <div className="hero-service">
 
         <Cart buttonCartName={"Contactez-nous"}

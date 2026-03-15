@@ -112,8 +112,8 @@ const Welcome = () => {
 
             <div className='header-welcome-page' >
                 <div ref={logoRef} className="logo"></div>
-                <div className="num"> <div ref={numContentRef} className="num-content"><i ref={phoneIconRef} className='bx bxs-phone' style={{ marginRight: "10px", display: "inline-block" }}></i>06 61 31 59 07<span className="desktop-text"> - Urgence 24H/24 7J/7</span></div> </div>
-                <Button onclick={() => { }} buttonName={"Appelez-maintenant"} classNameButton={`cta-welcome ${isStickyHidden ? 'sticky-hidden' : ''}`} iconButton={<i className='bx bxs-phone-call' style={{ marginRight: "10px" }} ></i>} phoneNumber={"06 61 31 59 07"} />
+                <div className="num"> <div ref={numContentRef} className="num-content"><i ref={phoneIconRef} className='bx bxs-phone' style={{ marginRight: "10px", display: "inline-block" }}></i>06 18 51 59 07<span className="desktop-text"> - Urgence 24H/24 7J/7</span></div> </div>
+                <Button onclick={() => { }} buttonName={"Appelez-maintenant"} classNameButton={`cta-welcome ${isStickyHidden ? 'sticky-hidden' : ''}`} iconButton={<i className='bx bxs-phone-call' style={{ marginRight: "10px" }} ></i>} phoneNumber={"06 18 51 59 07"} />
             </div>
 
             <div ref={phrasesRef} className="phrases">
