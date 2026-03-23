@@ -8,9 +8,10 @@ const Cart = ({ buttonCartName, iconCart, cartName, detailsCart, urlImageCart, i
     <div className='cart-container' >
 
       <div className="top-cart">
-        <h1>{cartName}</h1>
 
+        <h1>{cartName}</h1>
         <img src={iconCart} alt="" />
+        
       </div>
 
       <p>{detailsCart} </p>

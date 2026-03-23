@@ -1,4 +1,3 @@
-import About from './Pages/About/About'
 import Diagno from './Pages/diagnostic/Diagno'
 import FastService from './Pages/FastService/FastService'
 import Footer from './Pages/Footer/Footer'
@@ -16,7 +15,6 @@ function App() {
       <Welcome />
       <Diagno/>
       <Service/>
-      <About/>
       <FastService/>
       <Footer/>
     </>

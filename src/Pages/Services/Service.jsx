@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react'
 import Cart from '../../components/Cart'
 import "./Service.css"
-import install from "../../assets/install.png"
-import rep from "../../assets/rep.png"
-import secu from "../../assets/secu.png"
+import install from "../../assets/install.webp"
+import rep from "../../assets/rep.webp"
+import secu from "../../assets/secu.webp"
 import Marquee from '../../components/Marquee'
 import wrench from '../../assets/noto_hammer-and-wrench.png'
 import noto from '../../assets/noto_electric-plug.png'
